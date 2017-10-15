@@ -4,8 +4,8 @@
     <variable name='sharedLocation' value='/opt/IBM/IMShared'/>
   </variables>
   <server>
-    <repository location='{FTP MEDIA URL}/SETUP/products/WP85_Server'/>
-    <repository location='{FTP MEDIA URL}/SETUP/products/WP8500CF13_Server'/>
+    <repository location='http://docker/wps_install/SETUP/products/WP85_Server'/>
+    <repository location='http://docker/wps_install/SETUP/products/WP8500CF13_Server'/>
   </server>
   <profile id='IBM WebSphere Portal Server V8.5' installLocation='/opt/IBM/WebSphere/PortalServer'>
     <data key='cic.selector.arch' value='x86_64'/>
