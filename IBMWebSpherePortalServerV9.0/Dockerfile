@@ -17,7 +17,7 @@
 FROM centos:7
 
 #URL from where to download installation media
-ARG URL
+ARG URL=http://docker/wps_install
 
 ARG INSTALLBASE=/tmp
 RUN yum -y install \
