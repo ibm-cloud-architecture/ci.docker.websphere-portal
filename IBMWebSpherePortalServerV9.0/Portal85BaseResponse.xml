@@ -4,12 +4,12 @@
     <variable name='sharedLocation' value='/opt/IBM/IMShared'/>
   </variables>
   <server>
-    <repository location='http://docker/wps_install/SETUP/products/IFPI59896/8.5.0.0-WP-Server-IFPI59896.zip'/>
-    <repository location='http://docker/wps_install/SETUP/products/WP8500CF13_Server'/>
-    <repository location='http://docker/wps_install/SETUP/products/WP90_Portal'/>
-    <repository location='http://docker/wps_install/SETUP/products/JDK803'/>
-    <repository location='http://docker/wps_install/SETUP/products/WASND90'/>
-    <repository location='http://docker/wps_install/SETUP/products/WP85_Server'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/IFPI59896/8.5.0.0-WP-Server-IFPI59896.zip'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/WP8500CF13_Server'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/WP90_Portal'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/JDK803'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/WASND90'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/WP85_Server'/>
   </server>
   <profile id='IBM WebSphere Application Server V9.0' installLocation='/opt/IBM/WebSphere/AppServer'>
     <data key='cic.selector.arch' value='x86_64'/>

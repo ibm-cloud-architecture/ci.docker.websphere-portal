@@ -32,7 +32,7 @@ RUN yum -y install \
 
 # Copy the install images downloaded from passport advantage into the container
 RUN cd /tmp && \
-    wget -q http://docker/wps_install/WPS_SU_V9.0_PART_1_MP_ML.zip && \
+    wget -q http://169.55.86.198/wps_install/WPS_SU_V9.0_PART_1_MP_ML.zip && \
     unzip WPS_SU_V9.0_PART_1_MP_ML.zip && \
     rm -rf WPS_SU_V9.0_PART_1_MP_ML.zip 
 

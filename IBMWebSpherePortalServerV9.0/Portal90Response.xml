@@ -4,7 +4,7 @@
     <variable name='sharedLocation' value='/opt/IBM/IMShared'/>
   </variables>
   <server>
-    <repository location='http://docker/wps_install/SETUP/products/WP90_Portal'/>
+    <repository location='http://169.55.86.198/wps_install/SETUP/products/WP90_Portal'/>
   </server>
   <profile id='IBM WebSphere Portal Server V8.5' installLocation='/opt/IBM/WebSphere/PortalServer'>
     <data key='cic.selector.arch' value='x86_64'/>
