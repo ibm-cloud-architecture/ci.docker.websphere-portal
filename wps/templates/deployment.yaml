@@ -27,5 +27,6 @@ spec:
           httpGet:
             path: /
             port: {{ .Values.service.internalPort }}
-        resources:
-{{ toYaml .Values.resources | indent 10 }}
+          initialDelaySeconds: {{ .Values.service.livenessProbe.delaySeconds }}
+          periodSeconds: {{ .Values.service.livenessProbe.periodSeconds }}
+        resources: {{ toYaml .Values.resources | indent 10 }}
