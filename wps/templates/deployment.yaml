@@ -19,14 +19,17 @@ spec:
         - containerPort: {{ .Values.service.internalPort }}
         livenessProbe:
           httpGet:
-            path: /
+            path: /wps/myportal
             port: {{ .Values.service.internalPort }}
-          initialDelaySeconds: {{ .Values.service.livenessProbe.delaySeconds }}
-          periodSeconds: {{ .Values.service.livenessProbe.periodSeconds }}
+          initialDelaySeconds: {{ .Values.service.probe.delaySeconds }}
+          periodSeconds: {{ .Values.service.probe.periodSeconds }}
+          failureThreshold: {{ .Values.service.probe.failureThreshold }}
         readinessProbe:
           httpGet:
-            path: /
+            path: /wps/myportal
             port: {{ .Values.service.internalPort }}
-          initialDelaySeconds: {{ .Values.service.livenessProbe.delaySeconds }}
-          periodSeconds: {{ .Values.service.livenessProbe.periodSeconds }}
-        resources: {{ toYaml .Values.resources | indent 10 }}
+          initialDelaySeconds: {{ .Values.service.probe.delaySeconds }}
+          periodSeconds: {{ .Values.service.probe.periodSeconds }}
+          failureThreshold: {{ .Values.service.probe.failureThreshold }}
+        resources:
+{{ toYaml .Values.resources | indent 10 }}
