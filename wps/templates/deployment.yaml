@@ -21,6 +21,8 @@ spec:
           httpGet:
             path: /
             port: {{ .Values.service.internalPort }}
+          initialDelaySeconds: {{ .Values.service.livenessProbe.delaySeconds }}
+          periodSeconds: {{ .Values.service.livenessProbe.periodSeconds }}
         readinessProbe:
           httpGet:
             path: /
