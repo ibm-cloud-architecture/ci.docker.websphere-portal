@@ -77,4 +77,5 @@ RUN rm -rf /tmp/SETUP
 
 EXPOSE 10032 10033 10034 10035 10036 10037 10038 10039 10040 10041 10042 10200 10202 10202 10203
 
-CMD /bin/bash
+# CMD /bin/bash
+ENTRYPOINT ["/opt/IBM/WebSphere/wp_profile/bin/startServer.sh", "WebSphere_Portal"]
