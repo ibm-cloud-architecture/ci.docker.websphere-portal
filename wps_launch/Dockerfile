@@ -16,5 +16,5 @@
 
 FROM patrocinio/portal:v90
 
-COPY wrapper.sh wrapper.sh
-ENTRYPOINT ["wrapper.sh"]
+COPY wrapper.sh /wrapper.sh
+ENTRYPOINT ["/wrapper.sh"]
