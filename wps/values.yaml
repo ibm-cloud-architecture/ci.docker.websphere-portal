@@ -12,9 +12,10 @@ service:
   externalPort: 10039
   internalPort: 10039
   probe:
-    delaySeconds: 120
+    delaySeconds: 240
     periodSeconds: 30
     failureThreshold: 30
+    timeoutSeconds: 20
 ingress:
   enabled: false
   # Used to create Ingress record (should used with service.type: ClusterIP).

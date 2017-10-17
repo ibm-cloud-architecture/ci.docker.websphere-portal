@@ -17,19 +17,21 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: {{ .Values.service.internalPort }}
-        livenessProbe:
-          httpGet:
-            path: /wps/myportal
-            port: {{ .Values.service.internalPort }}
-          initialDelaySeconds: {{ .Values.service.probe.delaySeconds }}
-          periodSeconds: {{ .Values.service.probe.periodSeconds }}
-          failureThreshold: {{ .Values.service.probe.failureThreshold }}
-        readinessProbe:
-          httpGet:
-            path: /wps/myportal
-            port: {{ .Values.service.internalPort }}
-          initialDelaySeconds: {{ .Values.service.probe.delaySeconds }}
-          periodSeconds: {{ .Values.service.probe.periodSeconds }}
-          failureThreshold: {{ .Values.service.probe.failureThreshold }}
+#        livenessProbe:
+#          httpGet:
+#            path: /wps/myportal
+#            port: {{ .Values.service.internalPort }}
+#          initialDelaySeconds: {{ .Values.service.probe.delaySeconds }}
+#          periodSeconds: {{ .Values.service.probe.periodSeconds }}
+#          failureThreshold: {{ .Values.service.probe.failureThreshold }}
+#          timeoutSeconds: {{ .Values.service.probe.timeoutSeconds }}
+#        readinessProbe:
+#          httpGet:
+#            path: /wps/myportal
+#            port: {{ .Values.service.internalPort }}
+#          initialDelaySeconds: {{ .Values.service.probe.delaySeconds }}
+#          periodSeconds: {{ .Values.service.probe.periodSeconds }}
+#          failureThreshold: {{ .Values.service.probe.failureThreshold }}
+#          timeoutSeconds: {{ .Values.service.probe.timeoutSeconds }}
         resources:
 {{ toYaml .Values.resources | indent 10 }}

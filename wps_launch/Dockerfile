@@ -16,4 +16,5 @@
 
 FROM patrocinio/portal:v90
 
-ENTRYPOINT ["/opt/IBM/WebSphere/wp_profile/bin/startServer.sh", "WebSphere_Portal"]
+COPY wrapper.sh wrapper.sh
+ENTRYPOINT ["wrapper.sh"]
