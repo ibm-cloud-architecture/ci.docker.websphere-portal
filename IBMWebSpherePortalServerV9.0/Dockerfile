@@ -63,17 +63,17 @@ RUN /opt/IBM/InstallationManager/eclipse/tools/imcl \
     -log /tmp/Install.PortalCF13.log
 
 # Run applyCF.sh to actually apply the maintanance
-RUN /opt/IBM/WebSphere/wp_profile/PortalServer/bin/applyCF.sh \
-    -DWasPassword=wpsadmin \
-    -DPortalAdminPwd=wpsadmin
+#RUN /opt/IBM/WebSphere/wp_profile/PortalServer/bin/applyCF.sh \
+#    -DWasPassword=wpsadmin \
+#    -DPortalAdminPwd=wpsadmin
 
 # Install Portal 90 with a response file
-RUN /opt/IBM/InstallationManager/eclipse/tools/imcl \
-    -acceptLicense input /root/Portal90Response.xml \
-    -showProgress \
-    -log /tmp/Install.Portal90.log
+#RUN /opt/IBM/InstallationManager/eclipse/tools/imcl \
+#    -acceptLicense input /root/Portal90Response.xml \
+#    -showProgress \
+#    -log /tmp/Install.Portal90.log
 
-RUN rm -rf /tmp/SETUP
+#RUN rm -rf /tmp/SETUP
 
 EXPOSE 10032 10033 10034 10035 10036 10037 10038 10039 10040 10041 10042 10200 10202 10202 10203
 
