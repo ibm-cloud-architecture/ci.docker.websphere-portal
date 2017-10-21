@@ -4,8 +4,8 @@
 replicaCount: 1
 image:
   repository: patrocinio/wps
-  tag: v90
-  pullPolicy: Always
+  tag: v90.1
+  pullPolicy: IfNotPresent
 service:
   name: wps
   type: NodePort

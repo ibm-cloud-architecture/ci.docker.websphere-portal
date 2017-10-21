@@ -1,0 +1,1 @@
+docker pull hhuedocker.rtp.raleigh.ibm.com:5000/centos_wp:9.0.4.14.14.derby

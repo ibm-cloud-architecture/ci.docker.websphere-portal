@@ -14,7 +14,7 @@
 # limitations under the License.                                          #
 ###########################################################################
 
-FROM patrocinio/portal:v90
+FROM patrocinio/centos_wp:9.0.4.14.14
 
 COPY wrapper.sh /wrapper.sh
 ENTRYPOINT ["/wrapper.sh"]
