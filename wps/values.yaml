@@ -4,7 +4,7 @@
 replicaCount: 1
 image:
   repository: patrocinio/wps
-  tag: v90.1
+  tag: 9.0.4.14.14
   pullPolicy: IfNotPresent
 service:
   name: wps
