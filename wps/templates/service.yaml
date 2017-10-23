@@ -8,7 +8,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
   - port: {{ .Values.service.externalPort }}
-    targetPort: {{ .Values.service.internalPort }}
+    targetPort: {{ .Values.service.internalPort }} 
 #    nodePort: {{ .Values.service.nodePort }}
     protocol: TCP
     name: {{ .Values.service.name }}
