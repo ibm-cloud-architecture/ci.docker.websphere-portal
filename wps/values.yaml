@@ -9,8 +9,8 @@ image:
 service:
   name: wps
   type: NodePort
-  externalPort: 10039
-  internalPort: 10039
+  externalPort: 30039
+  internalPort: 30039
   nodePort: 30039
   probe:
     delaySeconds: 240
