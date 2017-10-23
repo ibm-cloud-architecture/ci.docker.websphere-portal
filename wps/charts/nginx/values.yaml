@@ -7,15 +7,15 @@ image:
   tag: stable
   pullPolicy: IfNotPresent
 service:
-  name: nginx
+  name: wps-nginx
   type: NodePort
-  externalPort: 80
+  externalPort: 10039
   internalPort: 80
 ingress:
-  enabled: false
+  enabled: true
   # Used to create Ingress record (should used with service.type: ClusterIP).
   hosts:
-    - chart-example.local
+    - wps-wps
   annotations:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"

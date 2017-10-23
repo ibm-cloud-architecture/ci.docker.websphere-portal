@@ -11,7 +11,7 @@ service:
   type: ClusterIP
   externalPort: 10039
   internalPort: 10039
-  nodePort: 10039
+#  nodePort: 10039
   probe:
     delaySeconds: 240
     periodSeconds: 30
