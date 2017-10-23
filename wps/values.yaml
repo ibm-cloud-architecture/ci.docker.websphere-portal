@@ -8,7 +8,7 @@ image:
   pullPolicy: IfNotPresent
 service:
   name: wps
-  type: ClusterIP
+  type: NodePort
   externalPort: 10039
   internalPort: 10039
 #  nodePort: 10039
