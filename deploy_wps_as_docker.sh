@@ -1,1 +1,1 @@
-docker run -p 10039:10039 -i -t -e portPrefix=300 patrocinio/centos_wp:9.0.4.14.14 
+docker run -p 10039:10039 -i -t patrocinio/centos_wp:9.0.4.14.14 -portPrefix 300
