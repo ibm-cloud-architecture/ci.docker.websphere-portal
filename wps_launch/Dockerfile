@@ -16,4 +16,4 @@
 
 FROM patrocinio/centos_wp:9.0.4.14.14
 
-ENTRYPOINT ["/bin/startContainer.sh -exitOnPortalStop false -portPrefix 300"]
+ENTRYPOINT ["/bin/startContainer.sh", "-exitOnPortalStop", "false" ,"-portPrefix", "300"]
