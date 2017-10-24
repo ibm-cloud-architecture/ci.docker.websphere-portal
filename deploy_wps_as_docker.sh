@@ -1,1 +1,1 @@
-docker run -p 10039:10039 -i -t patrocinio/portal:v90
+docker run -p 30039:30039 -i -t patrocinio/portal:v90
