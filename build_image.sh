@@ -3,3 +3,4 @@
 
 cd wps_launch
 docker build -t patrocinio/portal:v90 .
+docker push patrocinio/portal:v90
