@@ -3,14 +3,14 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: patrocinio/centos_wp
-  tag: 9.0.4.14.14
+  repository: patrocinio/portal
+  tag: v90
   pullPolicy: IfNotPresent
 service:
   name: wps
   type: NodePort
-  externalPort: 10039
-  internalPort: 10039
+  externalPort: 30039
+  internalPort: 30039
 #  nodePort: 10039
   probe:
     delaySeconds: 240
