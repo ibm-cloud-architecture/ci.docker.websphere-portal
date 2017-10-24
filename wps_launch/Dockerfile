@@ -16,5 +16,4 @@
 
 FROM patrocinio/centos_wp:9.0.4.14.14
 
-COPY wrapper.sh /wrapper.sh
-ENTRYPOINT ["/wrapper.sh"]
+ENTRYPOINT ["/bin/startContainer.sh -exitOnPortalStop false -portPrefix 300"]

@@ -53,13 +53,15 @@ COPY ./*.xml /root/
 # Install Portal with a response file - This installs Portal 85 onto WAS 90 with JDK 8
 RUN /opt/IBM/InstallationManager/eclipse/tools/imcl \
     -acceptLicense input /root/Portal85BaseResponse.xml \
-    -showProgress \
+    -showProgress -sVP \
     -log /tmp/Install.Portal85Base.log
+
+    STOPPED HERE
 
 # Update Portal to CF13 # Copy the response file # Install Portal with a response file
 RUN /opt/IBM/InstallationManager/eclipse/tools/imcl \
     -acceptLicense input /root/Portal85CF13Response.xml \
-    -showProgress \
+    -showProgress -sVP \
     -log /tmp/Install.PortalCF13.log
 
 # Run applyCF.sh to actually apply the maintanance
